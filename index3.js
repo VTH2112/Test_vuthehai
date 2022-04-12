@@ -8,6 +8,7 @@ const linkShort = document.createElement("div")
 let hightLight = false
 submit.addEventListener('click', () =>{
 const getApi = async () => {
+    alert("Select your short link you want to choose after submit link ")
     const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${linkValue.value}`, {
       method: 'GET'
     });
